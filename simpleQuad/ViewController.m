@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIView+Quadrilateral.h"
 #import "simpleQuad-Swift.h"
+#import "UIImageView+CoordinateTransform.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -45,6 +46,11 @@
                                      topRight:self.topRight.center
                                    bottomLeft:self.bottomLeft.center
                                   bottomRight:self.bottomRight.center];
+
+    CGPoint imageTopLeft = [self.imageView pixelPointFromViewPoint:self.imageView.frame.origin];
+    CGPoint origin = self.imageView.frame.origin;
+    origin.x += self.imageView.frame.size.width;
+    CGPoint imageTopRight = [self.imageView pixelPointFromViewPoint:origin];
 
 }
 

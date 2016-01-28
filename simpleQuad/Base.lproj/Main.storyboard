@@ -51,6 +51,13 @@
                                     <segue destination="1kU-HR-9v4" kind="modal" id="hDP-wL-crl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUV-RG-Qm0">
+                                <rect key="frame" x="115" y="518" width="90" height="30"/>
+                                <state key="normal" title="to placement"/>
+                                <connections>
+                                    <segue destination="qbN-bc-auL" kind="modal" id="Dio-eD-tVb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -85,6 +92,45 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="144" y="406"/>
+        </scene>
+        <!--Placement View Controller-->
+        <scene sceneID="5zL-QO-W5q">
+            <objects>
+                <viewController id="qbN-bc-auL" customClass="PlacementViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kfT-Wy-cFZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="zzO-bk-SeA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m3e-Ue-FIl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="with-quadrilateral.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b5D-Po-ru1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zuR-UE-d8B">
+                                <rect key="frame" x="82" y="180" width="144" height="170"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byh-8p-8io">
+                                <rect key="frame" x="137" y="20" width="34" height="30"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="qbN-bc-auL" eventType="touchUpInside" id="xA4-JA-CFZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G8i-Re-VYL"/>
+                    <connections>
+                        <outlet property="container" destination="b5D-Po-ru1" id="Rv7-8w-jPR"/>
+                        <outlet property="overlay" destination="zuR-UE-d8B" id="ZAF-HU-iOo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yja-DE-bge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144" y="1155"/>
         </scene>
         <!--Demo View Controller-->
         <scene sceneID="r5q-M5-b73">
