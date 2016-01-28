@@ -18,10 +18,18 @@
 @end
 
 @implementation PlacementViewController
+- (IBAction)changeMode:(UIButton *)sender {
+    NSInteger mode = self.container.contentMode;
+    mode += 1;
+    mode %= UIViewContentModeBottomRight + 1;
+    NSLog(@"content mode: %@", @(mode));
+    self.container.contentMode = mode;
+//    [sender setTitle:[NSString stringWithFormat:@"Mode %@", @(self.container.contentMode)]
+//            forState:UIControlStateNormal];
+    [self placeOverlay];
+}
 
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-
+- (void)placeOverlay {
     CGPoint topLeft = CGPointMake(96, 119);
     CGPoint topRight = CGPointMake(361, 101);
     CGPoint bottomLeft = CGPointMake(118, 473);
@@ -39,7 +47,12 @@
         self.overlay.frame = [quad box];
         self.overlay.layer.transform = [quad transformToFit:self.overlay.bounds anchorPoint:self.overlay.layer.position];
     }];
+}
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    [self placeOverlay];
 }
 
 

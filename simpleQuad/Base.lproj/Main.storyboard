@@ -119,6 +119,13 @@
                                     <action selector="dismiss:" destination="qbN-bc-auL" eventType="touchUpInside" id="xA4-JA-CFZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsf-0o-ToZ">
+                                <rect key="frame" x="242" y="28" width="39" height="30"/>
+                                <state key="normal" title="Mode"/>
+                                <connections>
+                                    <action selector="changeMode:" destination="qbN-bc-auL" eventType="touchUpInside" id="mRN-Tu-JXo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
