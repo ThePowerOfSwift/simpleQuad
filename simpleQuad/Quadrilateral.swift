@@ -1,13 +1,14 @@
 import UIKit
 
-public class Quadrilateral {
+@objc
+public class Quadrilateral : NSObject {
 
     public var topLeft = CGPointZero
     public var topRight = CGPointZero
     public var bottomLeft = CGPointZero
     public var bottomRight = CGPointZero
 
-    public init () {
+    public override init () {
     }
 
     public func box() -> CGRect {

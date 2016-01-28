@@ -7,6 +7,9 @@
 //
 
 #import "PlacementViewController.h"
+#import "UIImageView+CoordinateTransform.h"
+#import "simpleQuad-Swift.h"
+@import QuartzCore;
 
 @interface PlacementViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *container;
@@ -16,27 +19,32 @@
 
 @implementation PlacementViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    CGPoint topLeft = CGPointMake(96, 119);
+    CGPoint topRight = CGPointMake(361, 101);
+    CGPoint bottomLeft = CGPointMake(118, 473);
+    CGPoint bottomRight = CGPointMake(382, 457);
+
+
+
+    Quadrilateral *quad = [Quadrilateral new];
+    quad.topLeft = [self.container viewPointFromPixelPoint:topLeft];
+    quad.topRight = [self.container viewPointFromPixelPoint:topRight];
+    quad.bottomLeft = [self.container viewPointFromPixelPoint:bottomLeft];
+    quad.bottomRight = [self.container viewPointFromPixelPoint:bottomRight];
+
+    [UIView animateWithDuration:1.0 animations:^{
+        self.overlay.frame = [quad box];
+        self.overlay.layer.transform = [quad transformToFit:self.overlay.bounds anchorPoint:self.overlay.layer.position];
+    }];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 - (IBAction)dismiss:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
