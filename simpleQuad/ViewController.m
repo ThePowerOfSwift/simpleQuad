@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIView+Quadrilateral.h"
+#import "simpleQuad-Swift.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;

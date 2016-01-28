@@ -44,6 +44,13 @@
                                     <outletCollection property="gestureRecognizers" destination="M5R-Eu-4VJ" appends="YES" id="k2l-0u-q8h"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzt-Bl-qBm">
+                                <rect key="frame" x="119" y="33" width="33" height="30"/>
+                                <state key="normal" title="swift"/>
+                                <connections>
+                                    <segue destination="1kU-HR-9v4" kind="modal" id="hDP-wL-crl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -56,14 +63,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="rd4-D5-guu">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="M5R-Eu-4VJ">
                     <connections>
-                        <action selector="onPan:" destination="BYZ-38-t0r" id="Jg5-4Y-7J0"/>
-                    </connections>
-                </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="B2Z-rE-jNv">
-                    <connections>
-                        <action selector="onPan:" destination="BYZ-38-t0r" id="vxV-ij-t1k"/>
+                        <action selector="onPan:" destination="BYZ-38-t0r" id="c1V-CB-WCg"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="iyr-uk-CLV">
@@ -71,13 +73,105 @@
                         <action selector="onPan:" destination="BYZ-38-t0r" id="Ile-iT-1v7"/>
                     </connections>
                 </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="M5R-Eu-4VJ">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="B2Z-rE-jNv">
                     <connections>
-                        <action selector="onPan:" destination="BYZ-38-t0r" id="c1V-CB-WCg"/>
+                        <action selector="onPan:" destination="BYZ-38-t0r" id="vxV-ij-t1k"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="rd4-D5-guu">
+                    <connections>
+                        <action selector="onPan:" destination="BYZ-38-t0r" id="Jg5-4Y-7J0"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="144" y="406"/>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="r5q-M5-b73">
+            <objects>
+                <viewController id="1kU-HR-9v4" customClass="DemoViewController" customModule="simpleQuad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w07-Wc-Twa"/>
+                        <viewControllerLayoutGuide type="bottom" id="twx-as-C1M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dpk-c9-ukh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JJ0-b2-K6V">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="with-quadrilateral.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-Hx-VK2">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="controlpoint.png" translatesAutoresizingMaskIntoConstraints="NO" id="YGS-JU-MVT">
+                                        <rect key="frame" x="18" y="95" width="45" height="45"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="9BP-OH-cCH" appends="YES" id="kRP-W2-73k"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="controlpoint.png" translatesAutoresizingMaskIntoConstraints="NO" id="j3t-Kg-hKs">
+                                        <rect key="frame" x="225" y="77" width="45" height="45"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="GyS-7Q-pyh" appends="YES" id="zg0-2G-biA"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="controlpoint.png" translatesAutoresizingMaskIntoConstraints="NO" id="AdU-rP-UEK">
+                                        <rect key="frame" x="36" y="408" width="45" height="45"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="2aC-9U-2Td" appends="YES" id="PBr-kx-UTF"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="controlpoint.png" translatesAutoresizingMaskIntoConstraints="NO" id="j9a-GC-XXT">
+                                        <rect key="frame" x="233" y="390" width="45" height="45"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="BKc-si-z27" appends="YES" id="hTm-XJ-1RW"/>
+                                        </connections>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JD-Vt-y7h">
+                                        <rect key="frame" x="121" y="33" width="30" height="30"/>
+                                        <state key="normal" title="objc"/>
+                                        <connections>
+                                            <action selector="toObjC:" destination="1kU-HR-9v4" eventType="touchUpInside" id="4OJ-Xd-VYw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLeft" destination="AdU-rP-UEK" id="BSr-qb-Rdv"/>
+                        <outlet property="bottomRight" destination="j9a-GC-XXT" id="frn-fA-vqp"/>
+                        <outlet property="imageView" destination="MtW-Hx-VK2" id="hYS-PL-6kv"/>
+                        <outlet property="topLeft" destination="YGS-JU-MVT" id="Sr0-Ps-DUM"/>
+                        <outlet property="topRight" destination="j3t-Kg-hKs" id="U7I-ja-UyO"/>
+                    </connections>
+                </viewController>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="9BP-OH-cCH">
+                    <connections>
+                        <action selector="onPan:" destination="1kU-HR-9v4" id="AyD-hJ-CZY"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="GyS-7Q-pyh">
+                    <connections>
+                        <action selector="onPan:" destination="1kU-HR-9v4" id="dXr-jg-ZkH"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2aC-9U-2Td">
+                    <connections>
+                        <action selector="onPan:" destination="1kU-HR-9v4" id="hyF-zN-H5Q"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="BKc-si-z27">
+                    <connections>
+                        <action selector="onPan:" destination="1kU-HR-9v4" id="mXr-PG-zfI"/>
+                    </connections>
+                </panGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JNq-2Y-Zx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584" y="409"/>
         </scene>
     </scenes>
     <resources>
