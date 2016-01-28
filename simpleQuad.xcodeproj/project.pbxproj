@@ -17,6 +17,7 @@
 		4B211E521C5A4E11006F1FE4 /* with-quadrilateral.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B211E511C5A4E11006F1FE4 /* with-quadrilateral.jpg */; };
 		4B211E541C5A4F3A006F1FE4 /* controlpoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B211E531C5A4F3A006F1FE4 /* controlpoint.png */; };
 		4BA43F591C5A531C003917DA /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA43F581C5A531C003917DA /* DemoViewController.swift */; };
+		4BA43F5C1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA43F5B1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m */; };
 		4BEDDFF21C5A525D009CC3BA /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDDFF11C5A525D009CC3BA /* Quadrilateral.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 		4B211E511C5A4E11006F1FE4 /* with-quadrilateral.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "with-quadrilateral.jpg"; sourceTree = "<group>"; };
 		4B211E531C5A4F3A006F1FE4 /* controlpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = controlpoint.png; sourceTree = "<group>"; };
 		4BA43F581C5A531C003917DA /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		4BA43F5A1C5A5AA5003917DA /* UIImageView+CoordinateTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CoordinateTransform.h"; sourceTree = "<group>"; };
+		4BA43F5B1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CoordinateTransform.m"; sourceTree = "<group>"; };
 		4BEDDFF01C5A525C009CC3BA /* simpleQuad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "simpleQuad-Bridging-Header.h"; sourceTree = "<group>"; };
 		4BEDDFF11C5A525D009CC3BA /* Quadrilateral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quadrilateral.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +79,8 @@
 				4B211E4F1C5A4DD2006F1FE4 /* UIView+Quadrilateral.m */,
 				4B211E3B1C5A4D87006F1FE4 /* AppDelegate.m */,
 				4BA43F581C5A531C003917DA /* DemoViewController.swift */,
+				4BA43F5A1C5A5AA5003917DA /* UIImageView+CoordinateTransform.h */,
+				4BA43F5B1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m */,
 				4B211E3D1C5A4D87006F1FE4 /* ViewController.h */,
 				4B211E3E1C5A4D87006F1FE4 /* ViewController.m */,
 				4B211E401C5A4D87006F1FE4 /* Main.storyboard */,
@@ -176,6 +181,7 @@
 				4BA43F591C5A531C003917DA /* DemoViewController.swift in Sources */,
 				4B211E391C5A4D87006F1FE4 /* main.m in Sources */,
 				4BEDDFF21C5A525D009CC3BA /* Quadrilateral.swift in Sources */,
+				4BA43F5C1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
