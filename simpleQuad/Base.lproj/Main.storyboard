@@ -1,25 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="with-quadrilateral.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xcY-8B-j3i">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="controlpoint.png" translatesAutoresizingMaskIntoConstraints="NO" id="5lP-hE-Cdf">
+                                <rect key="frame" x="18" y="95" width="45" height="45"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rd4-D5-guu" appends="YES" id="cux-TY-aUN"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="controlpoint.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bfc-V1-4Pc">
+                                <rect key="frame" x="225" y="77" width="45" height="45"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="B2Z-rE-jNv" appends="YES" id="ruK-VM-jB1"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="controlpoint.png" translatesAutoresizingMaskIntoConstraints="NO" id="N1m-xb-fJq">
+                                <rect key="frame" x="36" y="408" width="45" height="45"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iyr-uk-CLV" appends="YES" id="OZf-yA-YQA"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="controlpoint.png" translatesAutoresizingMaskIntoConstraints="NO" id="HrH-7a-Zue">
+                                <rect key="frame" x="233" y="390" width="45" height="45"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="M5R-Eu-4VJ" appends="YES" id="k2l-0u-q8h"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomLeft" destination="N1m-xb-fJq" id="QiU-8Z-CLz"/>
+                        <outlet property="bottomRight" destination="HrH-7a-Zue" id="Oho-Eo-RgU"/>
+                        <outlet property="imageView" destination="xcY-8B-j3i" id="1Wk-XD-PT2"/>
+                        <outlet property="topLeft" destination="5lP-hE-Cdf" id="gwh-7M-B2M"/>
+                        <outlet property="topRight" destination="Bfc-V1-4Pc" id="Y8o-pR-l7Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="rd4-D5-guu">
+                    <connections>
+                        <action selector="onPan:" destination="BYZ-38-t0r" id="Jg5-4Y-7J0"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="B2Z-rE-jNv">
+                    <connections>
+                        <action selector="onPan:" destination="BYZ-38-t0r" id="vxV-ij-t1k"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="iyr-uk-CLV">
+                    <connections>
+                        <action selector="onPan:" destination="BYZ-38-t0r" id="Ile-iT-1v7"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="M5R-Eu-4VJ">
+                    <connections>
+                        <action selector="onPan:" destination="BYZ-38-t0r" id="c1V-CB-WCg"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="144" y="406"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="controlpoint.png" width="45" height="45"/>
+        <image name="with-quadrilateral.jpg" width="486" height="625"/>
+    </resources>
 </document>
