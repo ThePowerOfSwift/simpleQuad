@@ -7,7 +7,6 @@
 //
 
 #import "PlacementViewController.h"
-#import "UIImageView+CoordinateTransform.h"
 #import "simpleQuad-Swift.h"
 @import QuartzCore;
 
@@ -29,6 +28,10 @@
     [self placeOverlay];
 }
 
+- (CGPoint)viewPointFromPixelPoint:(CGPoint)point {
+    return [self.container.imageCoordinateSpace convertPoint:point toCoordinateSpace:self.container];
+}
+
 - (void)placeOverlay {
     CGPoint topLeft = CGPointMake(96, 119);
     CGPoint topRight = CGPointMake(361, 101);
@@ -38,10 +41,10 @@
 
 
     Quadrilateral *quad = [Quadrilateral new];
-    quad.topLeft = [self.container viewPointFromPixelPoint:topLeft];
-    quad.topRight = [self.container viewPointFromPixelPoint:topRight];
-    quad.bottomLeft = [self.container viewPointFromPixelPoint:bottomLeft];
-    quad.bottomRight = [self.container viewPointFromPixelPoint:bottomRight];
+    quad.topLeft = [self viewPointFromPixelPoint:topLeft];
+    quad.topRight = [self viewPointFromPixelPoint:topRight];
+    quad.bottomLeft = [self viewPointFromPixelPoint:bottomLeft];
+    quad.bottomRight = [self viewPointFromPixelPoint:bottomRight];
 
     [UIView animateWithDuration:1.0 animations:^{
         self.overlay.frame = [quad box];

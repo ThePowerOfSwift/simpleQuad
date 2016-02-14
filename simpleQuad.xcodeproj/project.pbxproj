@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B19855C1C70D5A700BD1208 /* UIImageView+UICoordinatedSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19855B1C70D5A700BD1208 /* UIImageView+UICoordinatedSpace.swift */; };
 		4B211E391C5A4D87006F1FE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B211E381C5A4D87006F1FE4 /* main.m */; };
 		4B211E3C1C5A4D87006F1FE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B211E3B1C5A4D87006F1FE4 /* AppDelegate.m */; };
 		4B211E3F1C5A4D87006F1FE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B211E3E1C5A4D87006F1FE4 /* ViewController.m */; };
@@ -17,12 +18,12 @@
 		4B211E521C5A4E11006F1FE4 /* with-quadrilateral.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B211E511C5A4E11006F1FE4 /* with-quadrilateral.jpg */; };
 		4B211E541C5A4F3A006F1FE4 /* controlpoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B211E531C5A4F3A006F1FE4 /* controlpoint.png */; };
 		4BA43F591C5A531C003917DA /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA43F581C5A531C003917DA /* DemoViewController.swift */; };
-		4BA43F5C1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA43F5B1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m */; };
 		4BA43F5F1C5A5D73003917DA /* PlacementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA43F5E1C5A5D73003917DA /* PlacementViewController.m */; };
 		4BEDDFF21C5A525D009CC3BA /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDDFF11C5A525D009CC3BA /* Quadrilateral.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B19855B1C70D5A700BD1208 /* UIImageView+UICoordinatedSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+UICoordinatedSpace.swift"; sourceTree = "<group>"; };
 		4B211E341C5A4D87006F1FE4 /* simpleQuad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleQuad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B211E381C5A4D87006F1FE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B211E3A1C5A4D87006F1FE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,8 +39,6 @@
 		4B211E511C5A4E11006F1FE4 /* with-quadrilateral.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "with-quadrilateral.jpg"; sourceTree = "<group>"; };
 		4B211E531C5A4F3A006F1FE4 /* controlpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = controlpoint.png; sourceTree = "<group>"; };
 		4BA43F581C5A531C003917DA /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		4BA43F5A1C5A5AA5003917DA /* UIImageView+CoordinateTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CoordinateTransform.h"; sourceTree = "<group>"; };
-		4BA43F5B1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CoordinateTransform.m"; sourceTree = "<group>"; };
 		4BA43F5D1C5A5D73003917DA /* PlacementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacementViewController.h; sourceTree = "<group>"; };
 		4BA43F5E1C5A5D73003917DA /* PlacementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacementViewController.m; sourceTree = "<group>"; };
 		4BEDDFF01C5A525C009CC3BA /* simpleQuad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "simpleQuad-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -82,8 +81,7 @@
 				4B211E4F1C5A4DD2006F1FE4 /* UIView+Quadrilateral.m */,
 				4B211E3B1C5A4D87006F1FE4 /* AppDelegate.m */,
 				4BA43F581C5A531C003917DA /* DemoViewController.swift */,
-				4BA43F5A1C5A5AA5003917DA /* UIImageView+CoordinateTransform.h */,
-				4BA43F5B1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m */,
+				4B19855B1C70D5A700BD1208 /* UIImageView+UICoordinatedSpace.swift */,
 				4B211E3D1C5A4D87006F1FE4 /* ViewController.h */,
 				4BA43F5D1C5A5D73003917DA /* PlacementViewController.h */,
 				4BA43F5E1C5A5D73003917DA /* PlacementViewController.m */,
@@ -184,10 +182,10 @@
 				4B211E3F1C5A4D87006F1FE4 /* ViewController.m in Sources */,
 				4B211E3C1C5A4D87006F1FE4 /* AppDelegate.m in Sources */,
 				4BA43F591C5A531C003917DA /* DemoViewController.swift in Sources */,
+				4B19855C1C70D5A700BD1208 /* UIImageView+UICoordinatedSpace.swift in Sources */,
 				4BA43F5F1C5A5D73003917DA /* PlacementViewController.m in Sources */,
 				4B211E391C5A4D87006F1FE4 /* main.m in Sources */,
 				4BEDDFF21C5A525D009CC3BA /* Quadrilateral.swift in Sources */,
-				4BA43F5C1C5A5AA5003917DA /* UIImageView+CoordinateTransform.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
