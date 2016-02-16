@@ -11,6 +11,13 @@ public class Quadrilateral : NSObject {
     public override init () {
     }
 
+    public func modifyPoints(transform:(CGPoint)->CGPoint) {
+        topLeft = transform(topLeft)
+        topRight = transform(topRight)
+        bottomLeft = transform(bottomLeft)
+        bottomRight = transform(bottomRight)
+    }
+
     public func box() -> CGRect {
         let xmin = min(min(min(topRight.x, topLeft.x), bottomLeft.x), bottomRight.x)
         let ymin = min(min(min(topRight.y, topLeft.y), bottomLeft.y), bottomRight.y)

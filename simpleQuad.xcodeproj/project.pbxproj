@@ -20,6 +20,7 @@
 		4B84B6B41C72FD4C0073E0B3 /* ImageCoordinateSpace.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B84B6B21C72FD4C0073E0B3 /* ImageCoordinateSpace.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B84B6BA1C7301ED0073E0B3 /* container.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B84B6B81C7301ED0073E0B3 /* container.jpg */; };
 		4B84B6BB1C7301ED0073E0B3 /* with-overlay.svg in Resources */ = {isa = PBXBuildFile; fileRef = 4B84B6B91C7301ED0073E0B3 /* with-overlay.svg */; };
+		4B84B6BD1C7303010073E0B3 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B84B6BC1C7303010073E0B3 /* OverlayViewController.swift */; };
 		4BA43F591C5A531C003917DA /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA43F581C5A531C003917DA /* DemoViewController.swift */; };
 		4BA43F5F1C5A5D73003917DA /* PlacementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA43F5E1C5A5D73003917DA /* PlacementViewController.m */; };
 		4BEDDFF21C5A525D009CC3BA /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDDFF11C5A525D009CC3BA /* Quadrilateral.swift */; };
@@ -57,6 +58,7 @@
 		4B84B6B21C72FD4C0073E0B3 /* ImageCoordinateSpace.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageCoordinateSpace.framework; path = Carthage/Build/iOS/ImageCoordinateSpace.framework; sourceTree = "<group>"; };
 		4B84B6B81C7301ED0073E0B3 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
 		4B84B6B91C7301ED0073E0B3 /* with-overlay.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "with-overlay.svg"; sourceTree = "<group>"; };
+		4B84B6BC1C7303010073E0B3 /* OverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
 		4BA43F581C5A531C003917DA /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		4BA43F5D1C5A5D73003917DA /* PlacementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacementViewController.h; sourceTree = "<group>"; };
 		4BA43F5E1C5A5D73003917DA /* PlacementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacementViewController.m; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				4BA43F581C5A531C003917DA /* DemoViewController.swift */,
 				4B211E3D1C5A4D87006F1FE4 /* ViewController.h */,
 				4BA43F5D1C5A5D73003917DA /* PlacementViewController.h */,
+				4B84B6BC1C7303010073E0B3 /* OverlayViewController.swift */,
 				4BA43F5E1C5A5D73003917DA /* PlacementViewController.m */,
 				4B211E3E1C5A4D87006F1FE4 /* ViewController.m */,
 				4B211E401C5A4D87006F1FE4 /* Main.storyboard */,
@@ -210,6 +213,7 @@
 				4BA43F5F1C5A5D73003917DA /* PlacementViewController.m in Sources */,
 				4B211E391C5A4D87006F1FE4 /* main.m in Sources */,
 				4BEDDFF21C5A525D009CC3BA /* Quadrilateral.swift in Sources */,
+				4B84B6BD1C7303010073E0B3 /* OverlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
