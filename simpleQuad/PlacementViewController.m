@@ -9,6 +9,7 @@
 #import "PlacementViewController.h"
 #import "simpleQuad-Swift.h"
 @import QuartzCore;
+@import ImageCoordinateSpace;
 
 @interface PlacementViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *container;
@@ -23,8 +24,6 @@
     mode %= UIViewContentModeBottomRight + 1;
     NSLog(@"content mode: %@", @(mode));
     self.container.contentMode = mode;
-//    [sender setTitle:[NSString stringWithFormat:@"Mode %@", @(self.container.contentMode)]
-//            forState:UIControlStateNormal];
     [self placeOverlay];
 }
 
