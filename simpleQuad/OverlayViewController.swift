@@ -13,6 +13,7 @@ import ImageCoordinateSpace
 class OverlayViewController: UIViewController {
     @IBOutlet weak var containerImageView: UIImageView!
     @IBOutlet weak var overlayView: UIView!
+    @IBOutlet weak var secondOverlayView: UIView!
     let svgPoints = "108.315837 80.1687782 377.282671 41.4352201 459.781253 251.836131 193.321418 330.023027"
 
     func updateOverlayPosition() {
@@ -33,6 +34,7 @@ class OverlayViewController: UIViewController {
         }
 
         overlayView.frame = quad.box()
+        secondOverlayView.frame = quad.box()
         overlayView.layer.transform = quad.transformToFit(overlayView.bounds,
             anchorPoint: overlayView.layer.position)
 
