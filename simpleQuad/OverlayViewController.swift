@@ -23,8 +23,8 @@ class OverlayViewController: UIViewController {
         let quad = Quadrilateral()
         quad.topLeft = coordinates[0]
         quad.topRight = coordinates[1]
-        quad.bottomLeft = coordinates[2]
-        quad.bottomRight = coordinates[3]
+        quad.bottomRight = coordinates[2]
+        quad.bottomLeft = coordinates[3]
 
         let imageSpace = containerImageView.imageCoordinateSpace
 
